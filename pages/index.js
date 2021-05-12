@@ -125,7 +125,9 @@ const useStyle = makeStyles({
     fontFamily: "PT Serif"
   },
   navbar: {
-    display: "flex"
+    display: "flex",
+    position: "sticky",
+    top: "0"
   },
   navbarRightSmall: {
     marginTop: "20px",
