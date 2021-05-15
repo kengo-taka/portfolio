@@ -32,7 +32,7 @@ const useStyle = makeStyles({
     maxWidth: "80%",
     width: "400px",
     height: "320px",
-    paddingTop: "60px",
+    paddingTop: "50px",
     marginBottom: "50px"
   },
   hover: {
@@ -73,6 +73,12 @@ const useStyle = makeStyles({
     maxWidth: "80%",
     width: "280px",
     height: "270px",
+    paddingTop: "0px",
+  },
+  card4: {
+    maxWidth: "80%",
+    width: "280px",
+    height: "370px",
     paddingTop: "0px",
   },
   middle: {
@@ -279,8 +285,8 @@ export default function Home() {
               <Paper elevation={0}>
                 <div align="center">
                   <Card elevation={0} className={classes.card1}>
-                    <div className={classes.marginT5}></div>
-                    <Typography variant="h6" className={classes.fontChangeForAbout}>I am Kengo. I am an iOS developer and a front-end developer, based in  Vancouver, available to work remotely or onsite. I will build your iPhone App and Web site</Typography>
+                    <div className={classes.marginT2}></div>
+                    <Typography variant="h6" className={classes.fontChangeForAbout}>I am Kengo. I am an iOS developer and a front-end developer, based in  Vancouver, available to work remotely or onsite. I will build your iPhone App and Web site.</Typography>
                   </Card>
                 </div>
               </Paper>
@@ -288,18 +294,32 @@ export default function Home() {
           </Grid>
         </div>
 
+        {/* education */}
+
+        <div align="center">
+          <div className={classes.longLine} ></div>
+        </div>
+        <div className={classes.marginT5}></div>
+        <Typography variant="h5" className={classes.newTitle}>Education</Typography>
+        <div className={classes.marginT5}></div>
+        <Typography variant="body1" className={classes.fontChange2}>DIPLOMA OF COMPUTER SCIENCE</Typography>
+
+        <Typography variant="body1" className={classes.fontChange}>Cornerstone International Community College of Canada | July 2020 -</Typography>
+        <div className={classes.marginT2}></div>
+        <Typography variant="body2" className={classes.fontChange2}>Coursework: Introduction to Computing, Algorithms, Flow Charts andProblem Solving, Java (Introduction to Object
+        Oriented Programming),
+Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStrap, Wordpress</Typography>
+        <div className={classes.marginT10}></div>
 
         {/* products */}
-
         <div id="products">
-
           <div align="center">
             <div className={classes.longLine} ></div>
           </div>
-          <div className={classes.marginT3}></div>
+          <div className={classes.marginT5}></div>
           <Typography variant="h5" className={classes.newTitle}>Products</Typography>
           <Typography className={classes.fontChange} align="left">Here is a selection of projects I have worked on in the recent years</Typography>
-          <div className={classes.marginT3}></div>
+          <div className={classes.marginT5}></div>
 
           <Grid container>
             <Grid item xs={12} sm={12} md={12} lg={6}>
@@ -311,104 +331,178 @@ export default function Home() {
                         <Image src="/ayaship.png" width={450} height={300} alt="hi" />
                       </div>
                     </div>
-                  </Card>
+                    </Card>
                   </Link>
                 </div>
               </Paper>
             </Grid>
 
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0} >
+                <div align="center" >
+                  <Card elevation={0} className={classes.card2}>
+                    <div className={classes.marginT1}></div>
+                    <Typography className={classes.fontChange} align="left">It is a website for AYA (Adolescent and Young Adult) patients with intractable diseases such as cancer and autoimmune disease in Japan.It is made by Wordpress, PHP and BootStrap.
+                  </Typography>
+                  </Card>
+                </div>
+              </Paper>
+            </Grid>
+          </Grid>
+
+          <div className={classes.marginT5}></div>
+          <div className={classes.marginT5}></div>
+          <div align="center">
+            <div className={classes.longLine} ></div>
+          </div>
+          <div className={classes.marginT5}></div>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0}>
+                <div align="center">
+                  <Link href="http://ayaship.marine-ocean.com/">
+                    <Card elevation={0} className={classes.card2}>
+                      <div className={classes.hover}>
+                        <div className={classes.hoverImg}>
+                          <Image src="/apple.png" width={450} height={300} alt="hi" />
+                        </div>
+                      </div>
+                    </Card>
+                  </Link>
+                </div>
+              </Paper>
+            </Grid>
 
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT3}></div>
-                    <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
-                    It is a website for patients with intractable diseases in Japan.
-                         </Typography>
+                    <div className={classes.marginT1}></div>
+                    <Typography className={classes.fontChange} align="left">It is a copy website of Apple Japan. It is made by BootStrap.
+                    </Typography>
                   </Card>
                 </div>
               </Paper>
             </Grid>
-            </Grid>
+          </Grid>
 
-            <div align="center">
+
+          <div className={classes.marginT5}></div>
+          <div align="center">
             <div className={classes.longLine} ></div>
           </div>
-            <Grid container>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
-                <Paper elevation={0}>
-                  <div align="center">
-                    <Link href="http://ayaship.marine-ocean.com/">
-                      <Card elevation={0} className={classes.card2}>
-                        <div className={classes.hover}>
-                          <div className={classes.hoverImg}>
-                            <Image src="/apple.png" width={450} height={300} alt="hi" />
-                          </div>
-                        </div>
-                      </Card>
-                    </Link>
-                  </div>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={12} sm={12} md={12} lg={6}>
-                <Paper elevation={0} >
-                  <div align="center" >
+          <div className={classes.marginT5}></div>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0}>
+                <div align="center">
+                  <Link href="http://company.marine-ocean.com/">
                     <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT3}></div>
-                      <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
-                    It is a website for patients with intractable diseases in Japan.
-                         </Typography>
+                      <div className={classes.hover}>
+                        <div className={classes.hoverImg}>
+                          <Image src="/company.png" width={450} height={300} alt="h" />
+                        </div>
+                      </div>
                     </Card>
-                  </div>
-                </Paper>
-              </Grid>
+                  </Link>
+                </div>
+              </Paper>
             </Grid>
 
-            <div align="center">
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0} >
+                <div align="center" >
+                  <Card elevation={0} className={classes.card2}>
+                    <div className={classes.marginT1}></div>
+                    <Typography className={classes.fontChange} align="left">It is a website of imaginary company. It is made by BootStrap.
+                    
+                    </Typography>
+                  </Card>
+                </div>
+              </Paper>
+            </Grid>
+
+          </Grid>
+          <div className={classes.marginT5}></div>
+          <div align="center">
             <div className={classes.longLine} ></div>
           </div>
-            <Grid container>
-              <Grid item xs={12} sm={12} md={12} lg={6}>
-                <Paper elevation={0}>
-                  <div align="center">
-                    <Link href="http://company.marine-ocean.com/">
-                      <Card elevation={0} className={classes.card2}>
-                        <div className={classes.hover}>
-                          <div className={classes.hoverImg}>
-                            <Image src="/company.png" width={450} height={300} alt="h" />
-                          </div>
+          <div className={classes.marginT5}></div>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0}>
+                <div align="center">
+                  <Link href="http://company.marine-ocean.com/">
+                    <Card elevation={0} className={classes.card4}>
+                      <div className={classes.hover}>
+                        <div className={classes.hoverImg}>
+                          <Image src="/hang.png" width={200} height={370} alt="h" />
                         </div>
-                      </Card>
-                    </Link>
-                  </div>
-                </Paper>
-              </Grid>
-
-              <Grid item xs={12} sm={12} md={12} lg={6}>
-                <Paper elevation={0} >
-                  <div align="center" >
-                    <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT3}></div>
-                      <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
-                    It is a website for patients with intractable diseases in Japan.
-                         </Typography>
+                      </div>
                     </Card>
-                  </div>
-                </Paper>
-              </Grid>
+                  </Link>
+                </div>
+              </Paper>
             </Grid>
 
-      
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0} >
+                <div align="center" >
+                  <Card elevation={0} className={classes.card4}>
+                    <div className={classes.marginT1}></div>
+                    <Typography className={classes.fontChange} align="left">App for people who are not familiar with the user's currentlocation(e.g. tourists, transients living in the city, etc.)
+Shows the directions and route option between each place
+                    
+                    </Typography>
+                  </Card>
+                </div>
+              </Paper>
+            </Grid>
+          </Grid>
+          <div className={classes.marginT5}></div>
+          <div align="center">
+            <div className={classes.longLine} ></div>
+          </div>
+          <div className={classes.marginT5}></div>
+          <Grid container>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0}>
+                <div align="center">
+                  <Link href="http://company.marine-ocean.com/">
+                    <Card elevation={0} className={classes.card4}>
+                      <div className={classes.hover}>
+                        <div className={classes.hoverImg}>
+                          <Image src="/todo.png" width={200} height={370} alt="h" />
+                        </div>
+                      </div>
+                    </Card>
+                  </Link>
+                </div>
+              </Paper>
+            </Grid>
+
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0} >
+                <div align="center" >
+                  <Card elevation={0} className={classes.card4}>
+                    <div className={classes.marginT1}></div>
+                    <Typography className={classes.fontChange} align="left">App for people who want to manage their schedule
+                    
+                    </Typography>
+                  </Card>
+                </div>
+              </Paper>
+            </Grid>
+          </Grid>
         </div>
 
         {/* Skills */}
-        <div className={classes.marginT5} id="skills">
+        <div className={classes.marginT10} id="skills">
 
           <div align="center">
             <div className={classes.longLine} ></div>
           </div>
+          <div className={classes.marginT5}></div>
           <Typography variant="h5" className={classes.newTitle}>Skills</Typography>
           <div className={classes.marginT3}></div>
           <Grid container>
@@ -451,7 +545,7 @@ export default function Home() {
         </div>
 
       </Container>
-
+      <div className={classes.marginT3}></div>
       <div className={classes.grayBox}>
         {/* contact */}
         <div id="contact">
@@ -459,7 +553,7 @@ export default function Home() {
 
             <Typography variant="h6" className={classes.fontChangeForTitle}>Contact</Typography>
             <div className={classes.marginT3}></div>
-<Typography variant="body2" className={classes.fontChange}>Don’t hesitate to contact me if you have any questions or interesting projects for me.</Typography>
+            <Typography variant="body2" className={classes.fontChange}>Don’t hesitate to contact me if you have any questions or interesting projects for me.</Typography>
           </div>
 
           <div align="center" className={classes.marginT5}>
@@ -472,11 +566,11 @@ export default function Home() {
               open={Boolean(anchorE2)}
               onClose={handleClose2}>
               <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-              P: +1 236 330 0296</Typography></MenuItem>
+                P: +1 236 330 0296</Typography></MenuItem>
               <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-              E: 1117marine1117@gmail.com</Typography></MenuItem>
+                E: 1117marine1117@gmail.com</Typography></MenuItem>
               <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-              A: Vancouver Canada</Typography></MenuItem>
+                A: Vancouver Canada</Typography></MenuItem>
             </Menu>
           </div>
         </div>
@@ -485,7 +579,7 @@ export default function Home() {
         <div className={classes.marginT10}>
           <div className={classes.marginT10}></div>
           <Typography variant="body2" align="center" className={classes.fontChange}>
-          Kengo.T
+            Kengo.T
 </Typography>
         </div>
       </div>
