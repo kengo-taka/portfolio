@@ -64,10 +64,16 @@ const useStyle = makeStyles({
   },
   card2: {
     maxWidth: "80%",
-    width: "280px",
-    height: "200px",
-    paddingTop: "30px",
+    width: "350px",
+    height: "230px",
+    paddingTop: "0px",
+
     marginBottom: "0px"
+  },
+  imageChange : {
+    width: "100%",
+    height: "100%",
+    filter: "grayscale(50%)",
   },
   card3: {
     maxWidth: "80%",
@@ -232,6 +238,7 @@ export default function Home() {
       </Head>
 
       {/* Nav bar */}
+      <div id="home"></div>
       <div className={classes.navbar} id="home">
         <motion.div
           initial={{ y: -300 }}
@@ -318,21 +325,21 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
           </div>
           <div className={classes.marginT5}></div>
           <Typography variant="h5" className={classes.newTitle}>Products</Typography>
-          <Typography className={classes.fontChange} align="left">Here is a selection of projects I have worked on in the recent years</Typography>
+          <Typography className={classes.fontChange} align="left">Here is a selection of projects I have worked on in the recent years.</Typography>
+          <Typography className={classes.fontChange} align="left">Click on the thumbnails below for more information.</Typography>
           <div className={classes.marginT5}></div>
 
           <Grid container>
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0} >
                 <div align="center">
-                  <Link href="http://ayaship.marine-ocean.com/"><Card elevation={0} className={classes.card2}>
-                    <div className={classes.hover}>
-                      <div className={classes.hoverImg}>
-                        <Image src="/ayaship.png" width={450} height={300} alt="hi" />
-                      </div>
-                    </div>
+                    <Card elevation={5} className={classes.card2}>
+                    <Link href="http://ayaship.marine-ocean.com/">  
+                      <div className={classes.imageChange}>
+                        <Image src="/ayaship.png" width={350} height={240} alt="hi" />
+                        </div>
+                        </Link>
                     </Card>
-                  </Link>
                 </div>
               </Paper>
             </Grid>
@@ -341,7 +348,9 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT1}></div>
+                  <div className={classes.marginT2}></div>
+                  <Typography variant="h5" className={classes.fontChange2}>Medical website</Typography>
+                    <div className={classes.marginT3}></div>
                     <Typography className={classes.fontChange} align="left">It is a website for AYA (Adolescent and Young Adult) patients with intractable diseases such as cancer and autoimmune disease in Japan.It is made by Wordpress, PHP and BootStrap.
                   </Typography>
                   </Card>
@@ -360,15 +369,13 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0}>
                 <div align="center">
-                  <Link href="http://ayaship.marine-ocean.com/">
-                    <Card elevation={0} className={classes.card2}>
-                      <div className={classes.hover}>
-                        <div className={classes.hoverImg}>
-                          <Image src="/apple.png" width={450} height={300} alt="hi" />
+                    <Card elevation={5} className={classes.card2}>
+                    <Link href="http://ayaship.marine-ocean.com/">
+                    <div className={classes.imageChange}>
+                        <Image src="/apple.png" width={350} height={240} alt="hi" />
                         </div>
-                      </div>
+                        </Link>
                     </Card>
-                  </Link>
                 </div>
               </Paper>
             </Grid>
@@ -377,7 +384,9 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT1}></div>
+                  <div className={classes.marginT2}></div>
+                  <Typography variant="h5" className={classes.fontChange2}>Apple website</Typography>
+                    <div className={classes.marginT3}></div>
                     <Typography className={classes.fontChange} align="left">It is a copy website of Apple Japan. It is made by BootStrap.
                     </Typography>
                   </Card>
@@ -396,15 +405,13 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0}>
                 <div align="center">
-                  <Link href="http://company.marine-ocean.com/">
-                    <Card elevation={0} className={classes.card2}>
-                      <div className={classes.hover}>
-                        <div className={classes.hoverImg}>
-                          <Image src="/company.png" width={450} height={300} alt="h" />
+                    <Card elevation={5} className={classes.card2}>
+                    <Link href="http://company.marine-ocean.com/">
+                    <div className={classes.imageChange}>
+                        <Image src="/company.png" width={350} height={240} alt="hi" />
                         </div>
-                      </div>
+                        </Link>
                     </Card>
-                  </Link>
                 </div>
               </Paper>
             </Grid>
@@ -413,7 +420,9 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card2}>
-                    <div className={classes.marginT1}></div>
+                  <div className={classes.marginT2}></div>
+                  <Typography variant="h5" className={classes.fontChange2}>Company website</Typography>
+                    <div className={classes.marginT3}></div>
                     <Typography className={classes.fontChange} align="left">It is a website of imaginary company. It is made by BootStrap.
                     
                     </Typography>
@@ -432,16 +441,12 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0}>
                 <div align="center">
-                  <Link href="http://company.marine-ocean.com/">
                     <Card elevation={0} className={classes.card4}>
-                      <div className={classes.hover}>
-                        <div className={classes.hoverImg}>
+                    <Link href="https://github.com/cookie777/Hang-Out-Planner">
                           <Image src="/hang.png" width={200} height={370} alt="h" />
-                        </div>
-                      </div>
+                          </Link>
                     </Card>
-                  </Link>
-                </div>
+                </div> 
               </Paper>
             </Grid>
 
@@ -449,9 +454,11 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card4}>
-                    <div className={classes.marginT1}></div>
+                  <div className={classes.marginT3}></div>
+<Typography variant="h5" className={classes.fontChange2}>Hang-Out-Planner</Typography>
+<div className={classes.marginT3}></div>
                     <Typography className={classes.fontChange} align="left">App for people who are not familiar with the user's currentlocation(e.g. tourists, transients living in the city, etc.)
-Shows the directions and route option between each place
+Shows the directions and route option between each place. It Uses MapKit, WebAPI and Tableview.
                     
                     </Typography>
                   </Card>
@@ -468,15 +475,11 @@ Shows the directions and route option between each place
             <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0}>
                 <div align="center">
-                  <Link href="http://company.marine-ocean.com/">
                     <Card elevation={0} className={classes.card4}>
-                      <div className={classes.hover}>
-                        <div className={classes.hoverImg}>
+                    <Link href="https://github.com/kengo-taka/ToDoItemWithCoreData">
                           <Image src="/todo.png" width={200} height={370} alt="h" />
-                        </div>
-                      </div>
+                          </Link>
                     </Card>
-                  </Link>
                 </div>
               </Paper>
             </Grid>
@@ -485,9 +488,10 @@ Shows the directions and route option between each place
               <Paper elevation={0} >
                 <div align="center" >
                   <Card elevation={0} className={classes.card4}>
-                    <div className={classes.marginT1}></div>
-                    <Typography className={classes.fontChange} align="left">App for people who want to manage their schedule
-                    
+                    <div className={classes.marginT3}></div>
+                  <Typography variant="h5" className={classes.fontChange2}>To Do List</Typography>
+                  <div className={classes.marginT5}></div>
+                    <Typography className={classes.fontChange} align="left">App for people who want to manage their schedule. It uses Tableview and Coredata.
                     </Typography>
                   </Card>
                 </div>
