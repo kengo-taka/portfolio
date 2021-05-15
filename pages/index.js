@@ -26,11 +26,12 @@ const theme = createMuiTheme({
   //   }
   // }
 })
+
 const useStyle = makeStyles({
   card1: {
     maxWidth: "80%",
-    width: "480px",
-    height: "390px",
+    width: "400px",
+    height: "320px",
     paddingTop: "60px",
     marginBottom: "50px"
   },
@@ -63,10 +64,16 @@ const useStyle = makeStyles({
   },
   card2: {
     maxWidth: "80%",
-    width: "300px",
-    height: "310px",
+    width: "280px",
+    height: "200px",
     paddingTop: "30px",
-    marginBottom: "50px"
+    marginBottom: "0px"
+  },
+  card3: {
+    maxWidth: "80%",
+    width: "280px",
+    height: "270px",
+    paddingTop: "0px",
   },
   middle: {
     textAlign: "center"
@@ -112,118 +119,151 @@ const useStyle = makeStyles({
   },
   navbarRight: {
     display: "flex",
-    marginRight: "10px",
+    marginRight: "30px",
     marginLeft: "auto",
     marginTop: "30px",
     justifyContent: "flex-end",
     [theme.breakpoints.down('md')]: {
       display: "none"
+
     }
   },
   navItem: {
     marginLeft: "50px",
-    fontFamily: "PT Serif"
+    fontFamily: "Montserrat",
+    color: "white"
   },
   navbar: {
     display: "flex",
     position: "sticky",
-    top: "0"
+    top: "0",
+    height: "90px",
+    backgroundColor: "#2B2B2B"
   },
   navbarRightSmall: {
-    marginTop: "20px",
+    marginTop: "28px",
     marginRight: "10px",
     marginLeft: "auto",
     [theme.breakpoints.up('lg')]: {
       display: "none"
     }
+
+  },
+  fontChangeForAbout: {
+    fontFamily: "PT Serif",
+    color: "#757575",
+    textAlign: "left"
   },
   fontChange: {
+    fontFamily: "PT Serif",
+    color: "#757575",
+  },
+  fontChange2: {
+    fontFamily: "PT Serif"
+  },
+  fontChangeForTitle: {
     fontFamily: "PT Serif"
   },
   fontKT: {
-    fontFamily: "Dancing Script"
+    fontFamily: "Dancing Script",
+    color: "white",
+    marginTop: "15px",
+    marginLeft: "15px"
   },
   line: {
     width: "50px",
     height: "2px",
     backgroundColor: "black",
     marginTop: "10px"
+  },
+  grayBox: {
+    backgroundColor: "#F5F5F5",
+    paddingTop: "20px"
+  },
+  longLine: {
+    width: "100%",
+    height: "1px",
+    backgroundColor: "#DDDDDD"
+  },
+  newTitle: {
+    fontFamily: "Montserrat"
+  },
+  con: {
+    [theme.breakpoints.up('md')]: {
+      width: "80%"
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: "90%"
+    }
   }
 })
 
 export default function Home() {
   const classes = useStyle()
 
+  // for button menu
   const [anchorEl, setAnchorEl] = React.useState(null);
-
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const [anchorE2, setAnchorE2] = React.useState(null);
-
   const handleClick2 = (event) => {
     setAnchorE2(event.currentTarget);
   };
-  
   const handleClose2 = () => {
     setAnchorE2(null);
   };
+
   return (
-    <Container>
+    <div>
       <Head>
         <title>Kengo Portfolio</title>
         <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@700&family=Lobster&family=PT+Serif&family=Russo+One&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet"></link>
       </Head>
-      <ThemeProvider theme={theme}>
 
-        {/* Nav bar */}
-        <div className={classes.navbar} id="home">
-          <motion.div
-            initial={{ y: -300 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 2.0 }}
-          ><Typography variant="h2" className={classes.fontKT}>K.T</Typography>
-          </motion.div>
+      {/* Nav bar */}
+      <div className={classes.navbar} id="home">
+        <motion.div
+          initial={{ y: -300 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 2.0 }}
+        ><Typography variant="h3" className={classes.fontKT}>K.T</Typography>
+        </motion.div>
 
-          <div className={classes.navbarRight}>
-            <Typography variant="h6" className={classes.navItem}><a href="#home">Home</a></Typography>
-            <Typography variant="h6" className={classes.navItem}><a href="#about">About</a></Typography>
-            <Typography variant="h6" className={classes.navItem}><a href="#products">Products</a></Typography>
-            <Typography variant="h6" className={classes.navItem}><a href="#skills">Skills</a></Typography>
-            <Typography variant="h6" className={classes.navItem}><a href="#contact">Contact</a></Typography>
-          </div>
-          <div className={classes.navbarRightSmall}>
-            <MenuIcon style={{ fontSize: 40 }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} />
-            <Menu
-              id="simple-menu"
-              anchorEl={anchorEl}
-              keepMounted
-              open={Boolean(anchorEl)}
-              onClose={handleClose}
-            >
-              <MenuItem onClick={handleClose}><a href="#home">Home</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href="#about">About</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href="#products">Products</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href="#skills">Skills</a></MenuItem>
-              <MenuItem onClick={handleClose}><a href="#contact">Contact</a></MenuItem>
-            </Menu>
-          </div>
+        <div className={classes.navbarRight}>
+          <Typography variant="body1" className={classes.navItem}><a href="#home">HOME</a></Typography>
+          <Typography variant="body1" className={classes.navItem}><a href="#about">ABOUT</a></Typography>
+          <Typography variant="body1" className={classes.navItem}><a href="#products">PRODUCTS</a></Typography>
+          <Typography variant="body1" className={classes.navItem}><a href="#skills">SKILLS</a></Typography>
+          <Typography variant="body1" className={classes.navItem}><a href="#contact">CONTACT</a></Typography>
         </div>
-
-        <div align="center" className={classes.marginT3}>
-          <Image src="/rain.jpg" width={800} height={400} alt="hi" />
+        <div className={classes.navbarRightSmall}>
+          <MenuIcon style={{ fontSize: 30, color: "white" }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} />
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}><a href="#home">Home</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="#about">About</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="#products">Products</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="#skills">Skills</a></MenuItem>
+            <MenuItem onClick={handleClose}><a href="#contact">Contact</a></MenuItem>
+          </Menu>
         </div>
+      </div>
+
+      <Container className={classes.con}>
 
         {/* About */}
-        <div className={classes.marginT10} id="about">
+        <div className={classes.marginT5} id="about">
           <div align="center">
-            <Typography variant="h4" className={classes.fontChange}>About</Typography>
-            <div className={classes.line}></div>
           </div>
           <Grid container>
             <Grid item xs={12} sm={12} md={6}>
@@ -240,8 +280,7 @@ export default function Home() {
                 <div align="center">
                   <Card elevation={0} className={classes.card1}>
                     <div className={classes.marginT5}></div>
-                    <Typography variant="h6" className={classes.fontChange}>I am Kengo.
-<br></br>I am iOS developer and front-end developer.</Typography>
+                    <Typography variant="h6" className={classes.fontChangeForAbout}>I am Kengo. I am an iOS developer and a front-end developer, based in  Vancouver, available to work remotely or onsite. I will build your iPhone App and Web site</Typography>
                   </Card>
                 </div>
               </Paper>
@@ -249,170 +288,207 @@ export default function Home() {
           </Grid>
         </div>
 
-        {/* products */}
-        <div id="products">
-          <div align="center">
-            <Typography variant="h4" className={classes.fontChange}>Products</Typography>
-            <div className={classes.line}></div>
-          </div>
 
+        {/* products */}
+
+        <div id="products">
+
+          <div align="center">
+            <div className={classes.longLine} ></div>
+          </div>
+          <div className={classes.marginT3}></div>
+          <Typography variant="h5" className={classes.newTitle}>Products</Typography>
+          <Typography className={classes.fontChange} align="left">Here is a selection of projects I have worked on in the recent years</Typography>
+          <div className={classes.marginT3}></div>
 
           <Grid container>
-            <Grid item xs={12} sm={12} md={12} lg={4}>
+            <Grid item xs={12} sm={12} md={12} lg={6}>
               <Paper elevation={0} >
                 <div align="center">
-                  <Link href="http://ayaship.marine-ocean.com/"><Card elevation={0} className={classes.card1}>
+                  <Link href="http://ayaship.marine-ocean.com/"><Card elevation={0} className={classes.card2}>
                     <div className={classes.hover}>
                       <div className={classes.hoverImg}>
                         <Image src="/ayaship.png" width={450} height={300} alt="hi" />
                       </div>
-                      <div className={classes.hoverText}>
-                        <Typography variant="h4">Patient Website</Typography>
-                        <Typography variant="body2" className={classes.fontChange}>It is made by Wordpress, PHP, BootStrap.<br></br>
-                        It is a website for patients with intractable diseases.</Typography>
-                      </div>
                     </div>
                   </Card>
                   </Link>
                 </div>
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={4}>
-              <Paper elevation={0}>
-                <div align="center">
-                <Link href="http://ayaship.marine-ocean.com/">
-                  <Card elevation={0} className={classes.card1}>
-                    <div className={classes.hover}>
-                      <div className={classes.hoverImg}>
-                        <Image src="/apple.png" width={450} height={300} alt="hi" />
-                      </div>
-                      <div className={classes.hoverText}>
-                        <Typography variant="h4">Apple Website</Typography>
-                        <Typography variant="body2" className={classes.marginT3}>It is made by BootStrap.</Typography>
-                      </div>
-                    </div>
+
+
+            <Grid item xs={12} sm={12} md={12} lg={6}>
+              <Paper elevation={0} >
+                <div align="center" >
+                  <Card elevation={0} className={classes.card2}>
+                    <div className={classes.marginT3}></div>
+                    <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
+                    It is a website for patients with intractable diseases in Japan.
+                         </Typography>
                   </Card>
-                  </Link>
                 </div>
               </Paper>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={4}>
-              <Paper elevation={0}>
-                <div align="center">
-                <Link href="http://company.marine-ocean.com/">
-                  <Card elevation={0} className={classes.card1}>
-                    <div className={classes.hover}>
-                      <div className={classes.hoverImg}>
-                        <Image src="/company.png" width={450} height={300} alt="h" />
-                      </div>
-                      <div className={classes.hoverText}>
-                        <Typography variant="h4">Company Website</Typography>
-                        <Typography variant="body2" className={classes.marginT3}>It is made by BootStrap.</Typography>
-                      </div>
-                    </div>
-                  </Card>
-                  </Link>
-                </div>
-              </Paper>
             </Grid>
-          </Grid>
+
+            <div align="center">
+            <div className={classes.longLine} ></div>
+          </div>
+            <Grid container>
+              <Grid item xs={12} sm={12} md={12} lg={6}>
+                <Paper elevation={0}>
+                  <div align="center">
+                    <Link href="http://ayaship.marine-ocean.com/">
+                      <Card elevation={0} className={classes.card2}>
+                        <div className={classes.hover}>
+                          <div className={classes.hoverImg}>
+                            <Image src="/apple.png" width={450} height={300} alt="hi" />
+                          </div>
+                        </div>
+                      </Card>
+                    </Link>
+                  </div>
+                </Paper>
+              </Grid>
+
+              <Grid item xs={12} sm={12} md={12} lg={6}>
+                <Paper elevation={0} >
+                  <div align="center" >
+                    <Card elevation={0} className={classes.card2}>
+                    <div className={classes.marginT3}></div>
+                      <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
+                    It is a website for patients with intractable diseases in Japan.
+                         </Typography>
+                    </Card>
+                  </div>
+                </Paper>
+              </Grid>
+            </Grid>
+
+            <div align="center">
+            <div className={classes.longLine} ></div>
+          </div>
+            <Grid container>
+              <Grid item xs={12} sm={12} md={12} lg={6}>
+                <Paper elevation={0}>
+                  <div align="center">
+                    <Link href="http://company.marine-ocean.com/">
+                      <Card elevation={0} className={classes.card2}>
+                        <div className={classes.hover}>
+                          <div className={classes.hoverImg}>
+                            <Image src="/company.png" width={450} height={300} alt="h" />
+                          </div>
+                        </div>
+                      </Card>
+                    </Link>
+                  </div>
+                </Paper>
+              </Grid>
+
+              <Grid item xs={12} sm={12} md={12} lg={6}>
+                <Paper elevation={0} >
+                  <div align="center" >
+                    <Card elevation={0} className={classes.card2}>
+                    <div className={classes.marginT3}></div>
+                      <Typography className={classes.fontChange} align="left">It is made by Wordpress, PHP, BootStrap.
+                    It is a website for patients with intractable diseases in Japan.
+                         </Typography>
+                    </Card>
+                  </div>
+                </Paper>
+              </Grid>
+            </Grid>
+
+      
         </div>
 
-        <div align="center" className={classes.marginT3}>
-          <Image src="/ground.jpg" width={800} height={400} alt="hi" />
-        </div>
         {/* Skills */}
-        <div className={classes.marginT10} id="skills">
+        <div className={classes.marginT5} id="skills">
+
           <div align="center">
-            <Typography variant="h4" className={classes.fontChange}>Skills</Typography>
-            <div className={classes.line}></div>
+            <div className={classes.longLine} ></div>
           </div>
-          <div className={classes.marginT10}></div>
+          <Typography variant="h5" className={classes.newTitle}>Skills</Typography>
+          <div className={classes.marginT3}></div>
           <Grid container>
             <Grid item xs={12} sm={12} md={6}>
               <Paper elevation={0}
               >
                 <div align="center">
-                  <motion.div whileHover={{ scale: 1.3 }}>
-                    <Card elevation={10} className={classes.card2} >
-                      <Typography align="center">
-                        <AppleIcon style={{ fontSize: 80 }} />
-                      </Typography>
-                      <Typography variant="h5" align="center" className={classes.fontChange}>iOS Development</Typography>
-                      <div className={classes.marginB2}></div>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>Swift</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>Objective-C</Typography>
-                    </Card>
-                  </motion.div>
+                  <Card elevation={0} className={classes.card3} >
+                    <Typography align="center">
+                      <AppleIcon style={{ fontSize: 80 }} />
+                    </Typography>
+                    <Typography variant="h5" align="center" className={classes.fontChange2}>iOS Development</Typography>
+                    <div className={classes.marginB2}></div>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>Swift</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>Objective-C</Typography>
+                  </Card>
                 </div>
               </Paper>
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <Paper elevation={0}>
                 <div align="center">
-                  <motion.div whileHover={{ scale: 1.3 }}>
-                    <Card elevation={10} className={classes.card2}>
-                      <Typography align="center">
-                        <DesktopMacIcon style={{ fontSize: 80 }} />
-                      </Typography>
-                      <Typography variant="h5" align="center" className={classes.fontChange}>Web Development</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>React.js / Next.js / Material UI</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>Java</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>JavaScript</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>HTML / CSS</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>BootStrap</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>PHP</Typography>
-                      <Typography variant="body2" align="center" className={classes.fontChange}>WordPress</Typography>
-                    </Card>
-                  </motion.div>
+                  <Card elevation={0} className={classes.card3}>
+                    <Typography align="center">
+                      <DesktopMacIcon style={{ fontSize: 80 }} />
+                    </Typography>
+                    <Typography variant="h5" align="center" className={classes.fontChange2}>Web Development</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>React.js / Next.js / Material UI</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>Java</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>JavaScript</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>HTML / CSS</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>BootStrap</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>PHP</Typography>
+                    <Typography variant="body2" align="center" className={classes.fontChange}>WordPress</Typography>
+                  </Card>
                 </div>
-
               </Paper>
             </Grid>
           </Grid>
         </div>
 
+      </Container>
+
+      <div className={classes.grayBox}>
         {/* contact */}
-        <div className={classes.marginT10} id="contact">
+        <div id="contact">
           <div align="center">
-            <Typography variant="h4" className={classes.fontChange}>Contact</Typography>
-            <div className={classes.line}></div>
+
+            <Typography variant="h6" className={classes.fontChangeForTitle}>Contact</Typography>
+            <div className={classes.marginT3}></div>
+<Typography variant="body2" className={classes.fontChange}>Don’t hesitate to contact me if you have any questions or interesting projects for me.</Typography>
           </div>
 
           <div align="center" className={classes.marginT5}>
             <Button type="submit" variant="outlined" color="black" aria-controls="simple-menu2" aria-haspopup="true" onClick={handleClick2} >GET IN TOUCH</Button>
-            
+
             <Menu
               id="simple-menu2"
               anchorEl={anchorE2}
               keepMounted
               open={Boolean(anchorE2)}
-              onClose={handleClose2}
-            >
+              onClose={handleClose2}>
               <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-            P: +1 236 330 0296</Typography></MenuItem>
-            <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-            E: 1117marine1117@gmail.com</Typography></MenuItem>
-            <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
-            A: Vancouver Canada</Typography></MenuItem>
+              P: +1 236 330 0296</Typography></MenuItem>
+              <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
+              E: 1117marine1117@gmail.com</Typography></MenuItem>
+              <MenuItem onClick={handleClose2}> <Typography variant="body2" className={classes.fontChange}>
+              A: Vancouver Canada</Typography></MenuItem>
             </Menu>
           </div>
         </div>
-          
-      
 
         {/* footer */}
         <div className={classes.marginT10}>
           <div className={classes.marginT10}></div>
           <Typography variant="body2" align="center" className={classes.fontChange}>
-            Kengo.T
+          Kengo.T
 </Typography>
-
         </div>
-
-
-
-      </ThemeProvider>
-    </Container>
+      </div>
+    </div >
   )
 }
