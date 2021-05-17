@@ -370,7 +370,7 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
               <Paper elevation={0}>
                 <div align="center">
                     <Card elevation={5} className={classes.card2}>
-                    <Link href="http://ayaship.marine-ocean.com/">
+                    <Link href="http://apple.marine-ocean.com/">
                     <div className={classes.imageChange}>
                         <Image src="/apple.png" width={350} height={240} alt="hi" />
                         </div>
