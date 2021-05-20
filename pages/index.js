@@ -8,6 +8,8 @@ import About from './components/about'
 import Education from './components/education.js'
 import Products from './components/products.js'
 import Navbar from './components/navbar.js'
+import Footer from './components/footer.js'
+
 
 export default function Home() {
 
@@ -47,6 +49,8 @@ export default function Home() {
 
       </Container>
 
+        {/* footer */}
+        <Footer />
     </div>
   )
 }

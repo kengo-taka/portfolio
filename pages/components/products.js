@@ -3,10 +3,33 @@ import styles from '/styles/Home.module.css';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Card from '@material-ui/core/Card';
-import React from 'react';
 import Link from '@material-ui/core/Link'
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
 
 const Products = () => {
+  // title animation
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
+  const boxVariants = {
+    hidden: { scale: 0 },
+    visible: {
+      scale: 1,
+      transition: {
+        duration: 0.5
+      }
+    }
+  }
   return (
     <div>
 
@@ -15,9 +38,11 @@ const Products = () => {
           <div className={styles.longLine} ></div>
         </div>
         <div className={styles.mt5}></div>
-
-        <h2 className={styles.productsTitle}>Products</h2>
-
+        <motion.h2 className={styles.productsTitle}
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={boxVariants}>Products</motion.h2>
         <p className={styles.productsText1}>Here is a selection of projects I have worked on in the recent years.</p>
         <p className={styles.productsText1}>Click on the thumbnails below for more information.</p>
         <div className={styles.mt5}></div>

@@ -140,6 +140,7 @@
   font-family: "PT Serif";
   color: #757575;
   text-align: left;
+  line-height: 40px;
 }
 
 .cardAbout {
@@ -149,6 +150,8 @@
   padding-top: 50px;
   margin-bottom: 50px;
 }
+
+
 
 /* education */
 .educationTitle {
@@ -185,6 +188,7 @@
   font-family: "PT Serif";
   text-align: left;
   color: #757575;
+  line-height: 30px;
 }
 
 .cardWeb {
@@ -237,12 +241,6 @@ margin-right: auto;
   margin-right: auto;
 }
 
-.copyRight {
-  font-family: 'PT Serif', serif;
-  text-align: center;
-  display: block;
-}
-
 .contactTitle {
   font-family: 'PT Serif', serif;
   text-align: center;
@@ -254,16 +252,34 @@ margin-right: auto;
   text-align: center;
 }
 
-.contactSocial {
-  display: flex;
-  justify-content: center;
+.contactImage {
+  text-align: center;
 }
 
-.socialIcon {
+
+.socialMiddle {
+text-align: center;
+}
+
+/* footer */
+.footerBox {
+  background-color: #2B2B2B;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footerIcon {
   margin-top: 11px;
   margin-right: 10px;
 }
 
-.socialMiddle {
-text-align: center;
+.copyRight {
+  font-family: "Montserrat";
+  text-align: center;
+  display: block;
+  color: white;
 }
