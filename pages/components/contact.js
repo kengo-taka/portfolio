@@ -4,12 +4,34 @@ import styles from '/styles/Home.module.css';
 import emailjs from 'emailjs-com';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import React, { useState } from 'react'
 
 const Contact = () => {
 
+  const [name, setName] = useState('')
+  const [nameError, setNameError] = useState(false)
+  const [email, setEmail] = useState('')
+  const [emailError, setEmailError] = useState(false)
+  const [message, setMessage] = useState('')
+  const [messageError, setMessageError] = useState(false)
+
   function sendEmail(e) {
     e.preventDefault();
+  setNameError(false)
+  setEmailError(false)
+  setMessageError(false)
+  
+    if (name == ''){
+      setNameError(true)
+    }
+    if (email == ''){
+      setEmailError(true)
+    }
+    if (message == ''){
+      setMessageError(true)
+    }
 
+    if (name && email && message) {
     emailjs.sendForm('service_uvtyvca', 'template_oy1d78v', e.target, 'user_QxAtFMz1Wca0Rq6Y0I3BL')
       .then((result) => {
         console.log(result.text);
@@ -17,6 +39,7 @@ const Contact = () => {
         console.log(error.text);
       });
     e.target.reset()
+    }
   }
 
   return (
@@ -29,25 +52,29 @@ const Contact = () => {
 
       <form noValidate autoComplete="off" className={styles.contactField} onSubmit={sendEmail}>
         <TextField
+        onChange={(e) => setName(e.target.value)}
           label="Name"
           variant="outlined"
           required
           fullWidth
           type="text"
           name="from_name"
+          error={nameError}
         ></TextField>
         <div className={styles.mt3}></div>
         <TextField
+                onChange={(e) => setEmail(e.target.value)}
           fullWidth
           label="Email"
           variant="outlined"
           required
           type="text"
           name="from_email"
+          error={emailError}
         ></TextField>
         <div className={styles.mt3}></div>
         <TextField
-
+        onChange={(e) => setMessage(e.target.value)}
           fullWidth
           label="Text"
           variant="outlined"
@@ -56,6 +83,7 @@ const Contact = () => {
           rows={4}
           type="email"
           name="message"
+          error={messageError}
         ></TextField>
         <div className={styles.mt3}></div>
         <div align="center">
