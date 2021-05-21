@@ -83,6 +83,176 @@
     font-size: 50px;
   }
 
+/* about */
+.aboutText {
+  font-family: "PT Serif";
+  color: #757575;
+  text-align: left;
+  line-height: 40px;
+}
+
+.cardAbout {
+  max-width: 80%;
+  width: 400px;
+  height: 320px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* education */
+.educationTitle {
+  font-family: "Montserrat";
+}
+
+.educationText1  {
+  font-family: "PT Serif";
+}
+
+.educationText2  {
+  font-family: "PT Serif";
+  color: #757575;
+}
+.educationText3  {
+  font-family: "PT Serif";
+}
+
+.orangeLineE1 {
+  width: 230px;
+  height:3px;
+  background-color: orange;
+}
+
+.orangeLineE2 {
+  width: 305px;
+  height:3px;
+  background-color: orange;
+}
+
+/* products */
+.productsTitle {
+  font-family: "Montserrat";
+}
+
+.productsText1  {
+  font-family: "PT Serif";
+  color: #757575;
+}
+
+.productsText2  {
+  font-family: "PT Serif";
+}
+
+.productsText3  {
+  font-family: "PT Serif";
+  text-align: left;
+  color: #757575;
+  line-height: 30px;
+}
+
+.cardWeb {
+  max-width: 80%;
+  width: 350px;
+  height: 230px;
+}
+
+.cardIOS {
+  max-width: 80%;
+  width: 280px;
+  height: 370px;
+}
+
+.imageChange  {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(50%);
+}
+
+.orangeLineP1 {
+  width: 180px;
+  height:3px;
+  background-color: orange;
+}
+/* skills */
+.skillsTitle {
+  font-family: "PT Serif";
+}
+
+.cardSkills {
+  max-width: 80%;
+  width: 280px;
+  height: 400px;
+}
+
+.skillsTitle {
+  font-family: "Montserrat";
+}
+
+.skillsText{
+  font-family: "PT Serif";
+  color: #757575;
+}
+
+.orangeLineS1 {
+  width: 100px;
+  height:3px;
+  background-color: orange;
+}
+/* contact */
+.contactField {
+width :500px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.contactButton {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactTitle {
+  font-family: 'PT Serif', serif;
+  text-align: center;
+}
+
+.contactText {
+  font-family: 'PT Serif', serif;
+  color: #757575;
+  text-align: center;
+}
+
+.contactImage {
+  text-align: center;
+}
+
+.socialMiddle {
+text-align: center;
+}
+
+/* footer */
+.footerBox {
+  background-color: #2B2B2B;
+}
+
+.footerSocial {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footerIcon {
+  margin-top: 11px;
+  margin-right: 10px;
+}
+
+.copyRight {
+  font-family: "Montserrat";
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+
+/* common css code */
 
 
 .mt1 {
@@ -135,151 +305,3 @@
   background-color: #DDDDDD;
 }
 
-/* about */
-.aboutText {
-  font-family: "PT Serif";
-  color: #757575;
-  text-align: left;
-  line-height: 40px;
-}
-
-.cardAbout {
-  max-width: 80%;
-  width: 400px;
-  height: 320px;
-  padding-top: 50px;
-  margin-bottom: 50px;
-}
-
-
-
-/* education */
-.educationTitle {
-  font-family: "Montserrat";
-}
-
-.educationText1  {
-  font-family: "PT Serif";
-}
-
-.educationText2  {
-  font-family: "PT Serif";
-  color: #757575;
-}
-.educationText3  {
-  font-family: "PT Serif";
-}
-
-/* products */
-.productsTitle {
-  font-family: "Montserrat";
-}
-
-.productsText1  {
-  font-family: "PT Serif";
-  color: #757575;
-}
-
-.productsText2  {
-  font-family: "PT Serif";
-}
-
-.productsText3  {
-  font-family: "PT Serif";
-  text-align: left;
-  color: #757575;
-  line-height: 30px;
-}
-
-.cardWeb {
-  max-width: 80%;
-  width: 350px;
-  height: 230px;
-}
-
-.cardIOS {
-  max-width: 80%;
-  width: 280px;
-  height: 370px;
-}
-
-.imageChange  {
-  width: 100%;
-  height: 100%;
-  filter: grayscale(50%);
-}
-
-/* skills */
-.skillsTitle {
-  font-family: "PT Serif";
-}
-
-.cardSkills {
-  max-width: 80%;
-  width: 280px;
-  height: 400px;
-}
-
-.skillsTitle {
-  font-family: "Montserrat";
-}
-
-.skillsText{
-  font-family: "PT Serif";
-  color: #757575;
-}
-
-/* contact */
-.contactField {
-width :500px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.contactButton {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contactTitle {
-  font-family: 'PT Serif', serif;
-  text-align: center;
-}
-
-.contactText {
-  font-family: 'PT Serif', serif;
-  color: #757575;
-  text-align: center;
-}
-
-.contactImage {
-  text-align: center;
-}
-
-
-.socialMiddle {
-text-align: center;
-}
-
-/* footer */
-.footerBox {
-  background-color: #2B2B2B;
-}
-
-.footerSocial {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-.footerIcon {
-  margin-top: 11px;
-  margin-right: 10px;
-}
-
-.copyRight {
-  font-family: "Montserrat";
-  text-align: center;
-  display: block;
-  color: white;
-}

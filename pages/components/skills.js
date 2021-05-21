@@ -51,6 +51,7 @@ const Skills = () => {
                 <Card elevation={0} className={styles.cardSkills} >
                   <AppleIcon style={{ fontSize: 80 }} />
                   <h3 className={styles.skillsTitle}>iOS Development</h3>
+                      <div className={styles.orangeLineS1}></div>
                   <div className={styles.mt2}></div>
                   <p className={styles.skillsText}>Swift</p>
                   <p className={styles.skillsText}>Objective-C</p>
@@ -66,6 +67,7 @@ const Skills = () => {
                   <DesktopMacIcon style={{ fontSize: 80 }} />
 
                   <h3 className={styles.skillsTitle}>Web Development</h3>
+                      <div className={styles.orangeLineS1}></div>
                   <div className={styles.mt2}></div>
                   <p className={styles.skillsText}>React.js / Next.js / Material UI</p>
                   <p className={styles.skillsText}>Java</p>

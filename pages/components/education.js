@@ -41,6 +41,7 @@ const Education = () => {
         variants={boxVariants}>Education</motion.h2>
       <div className={styles.mt5}></div>
       <h3 className={styles.educationText1}>DIPLOMA OF COMPUTER </h3>
+      <div className={styles.orangeLineE1}></div>
       <h4 className={styles.educationText2}>Cornerstone International Community College of Canada | July 2020 -</h4>
       <h4 className={styles.educationText3}>Coursework: Introduction to Computing, Algorithms, Flow Charts andProblem Solving, Java (Introduction to Object
       Oriented Programming),
@@ -48,6 +49,8 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
       <div className={styles.mt10}></div>
 
       <h3 className={styles.educationText1}>BACHELOR OF MARINE BIOLOGY</h3>
+            <div className={styles.orangeLineE2}></div>
+
       <h4 className={styles.educationText2}>Mie University | 2012 - 2016</h4>
       <h4 className={styles.educationText3}>Development of c
 osmetics from pearl oyster proteins</h4>

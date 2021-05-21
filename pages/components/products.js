@@ -66,6 +66,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardWeb}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Medical website</h2>
+                        <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>It is a website for AYA (Adolescent and Young Adult) patients with intractable diseases such as cancer and autoimmune disease in Japan.It is made by Wordpress, PHP and BootStrap.</h4>
                 </Card>
@@ -99,6 +100,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardWeb}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Apple website</h2>
+                                          <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>It is a copy website of Apple Japan. It is made by BootStrap.</h4>
                 </Card>
@@ -132,6 +134,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardWeb}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Company website</h2>
+                                          <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>It is a website of imaginary company. It is made by BootStrap.</h4>
                 </Card>
@@ -165,6 +168,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardIOS}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Hang-Out-Planner</h2>
+                                          <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>App for people who are not familiar with the user's currentlocation(e.g. tourists, transients living in the city, etc.)
                   Shows the directions and route option between each place. It Uses MapKit, WebAPI and Tableview.
@@ -200,6 +204,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardIOS}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>To Do List</h2>
+                  <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>App for people who want to manage their schedule. It uses Tableview and Coredata.</h4>
                 </Card>
