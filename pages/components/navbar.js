@@ -22,7 +22,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 2.0 }}
       >
-        <h1 className={styles.fontKT}>K.T</h1>
+        <a href="#about"><h1 className={styles.fontKT}>K.T</h1></a>
       </motion.div>
 
       {/* navbar for big screen */}

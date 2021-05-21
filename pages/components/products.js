@@ -100,7 +100,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardWeb}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Apple website</h2>
-                                          <div className={styles.orangeLineP1}></div>
+                      <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>It is a copy website of Apple Japan. It is made by BootStrap.</h4>
                 </Card>
@@ -134,7 +134,7 @@ const Products = () => {
                 <Card elevation={0} className={styles.cardWeb}>
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Company website</h2>
-                                          <div className={styles.orangeLineP1}></div>
+                    <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
                   <h4 className={styles.productsText3}>It is a website of imaginary company. It is made by BootStrap.</h4>
                 </Card>
