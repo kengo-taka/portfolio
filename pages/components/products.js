@@ -212,6 +212,40 @@ const Products = () => {
             </Paper>
           </Grid>
         </Grid>
+
+        <div className={styles.mt5}></div>
+        <div align="center">
+          <div className={styles.longLine} ></div>
+        </div>
+        <div className={styles.mt5}></div>
+
+        <Grid container>
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0}>
+              <div align="center">
+                <Card elevation={0} className={styles.cardIOS}>
+                  <Link href="https://github.com/kengo-taka/collectionviewAssignment">
+                    <Image src="/collection.png" width={200} height={370} alt="h" />
+                  </Link>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center" >
+                <Card elevation={0} className={styles.cardIOS}>
+                  <div className={styles.mt2}></div>
+                  <h2 className={styles.productsText2}>Cafe CollectionView</h2>
+                  <div className={styles.orangeLineP1}></div>
+                  <div className={styles.mt3}></div>
+                  <h4 className={styles.productsText3}>App for showing the menu of the cafe. It is made by collectionview, UISearchController and  UICollectionViewDiffableDataSource</h4>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
