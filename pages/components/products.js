@@ -51,7 +51,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center">
-                <Card elevation={5} className={styles.cardWeb}>
+                <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://ayaship.marine-ocean.com/">
                     <Image src="/ayaship.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
@@ -85,7 +85,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center">
-                <Card elevation={5} className={styles.cardWeb}>
+                <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://apple.marine-ocean.com/">
                     <Image src="/apple.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
@@ -119,7 +119,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center">
-                <Card elevation={5} className={styles.cardWeb}>
+                <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://company.marine-ocean.com/">
                     <Image src="/company.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
