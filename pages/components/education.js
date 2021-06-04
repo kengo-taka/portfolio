@@ -49,7 +49,7 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
       <div className={styles.mt10}></div>
 
       <h3 className={styles.educationText1}>BACHELOR OF MARINE BIOLOGY</h3>
-            <div className={styles.orangeLineE2}></div>
+      <div className={styles.orangeLineE2}></div>
 
       <h4 className={styles.educationText2}>Mie University | 2012 - 2016</h4>
       <h4 className={styles.educationText3}>Development of c

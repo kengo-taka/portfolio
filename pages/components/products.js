@@ -52,6 +52,40 @@ const Products = () => {
             <Paper elevation={0} >
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
+                  <Link href="https://frescura-cafe.vercel.app">
+                    <Image src="/frescura.png" width={350} height={240} alt="hi" className={styles.imageChange} />
+                  </Link>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center" >
+                <Card elevation={0} className={styles.cardWeb}>
+                  <div className={styles.mt2}></div>
+                  <h2 className={styles.productsText2}>Cafe website</h2>
+                        <div className={styles.orangeLineP1}></div>
+                  <div className={styles.mt3}></div>
+                  <h4 className={styles.productsText3}>It is a cafe website. The cafe is located in the center of Zacatecas city in Mexico. It is made by Next.js, Material UI and so on.</h4>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+        </Grid>
+
+        <div className={styles.mt5}></div>
+        <div align="center">
+          <div className={styles.longLine} ></div>
+        </div>
+        <div className={styles.mt5}></div>
+
+        <Grid container>
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center">
+                <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://ayaship.marine-ocean.com/">
                     <Image src="/ayaship.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
@@ -68,7 +102,7 @@ const Products = () => {
                   <h2 className={styles.productsText2}>Medical website</h2>
                         <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
-                  <h4 className={styles.productsText3}>It is a website for AYA (Adolescent and Young Adult) patients with intractable diseases such as cancer and autoimmune disease in Japan.It is made by Wordpress, PHP and BootStrap.</h4>
+                  <h4 className={styles.productsText3}>It is a website for AYA (Adolescent and Young Adult) patients with intractable diseases such as cancer in Japan.It is made by Wordpress, PHP and BootStrap.</h4>
                 </Card>
               </div>
             </Paper>
