@@ -52,8 +52,7 @@ Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStr
       <div className={styles.orangeLineE2}></div>
 
       <h4 className={styles.educationText2}>Mie University | 2012 - 2016</h4>
-      <h4 className={styles.educationText3}>Development of c
-osmetics from pearl oyster proteins</h4>
+      <h4 className={styles.educationText3}>Development of cosmetics from pearl oyster proteins</h4>
       <div className={styles.mt10}></div>
     </div>
   );
