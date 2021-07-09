@@ -9,9 +9,16 @@ import Education from './components/education.js'
 import Products from './components/products.js'
 import Navbar from './components/navbar.js'
 import Footer from './components/footer.js'
+import Aos from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from 'react'
 
 
 export default function Home() {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   // for button menu
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,13 +30,13 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div  id="home">
       <Head>
         <title>Kengo Portfolio</title>
       </Head>
 
       {/* Nav bar */}
-      <Navbar />
+      <Navbar/>
       <Container className={styles.con}>
 
         {/* About */}

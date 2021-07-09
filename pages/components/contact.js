@@ -6,8 +6,15 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 
 const Contact = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   // title animation
   const controls = useAnimation();
@@ -75,7 +82,7 @@ const Contact = () => {
         variants={boxVariants}>Contact</motion.h2>
       <div className={styles.mt5}></div>
       <div className={styles.contactImage}>
-        <Image src="/cafe2.jpg" width={380} height={250} alt="hi" />
+        <Image src="/cafe2.jpg" width={380} height={250} alt="hi" data-aos="flip-up"/>
       </div>
       <div className={styles.mt5}></div>
       <p className={styles.contactText}>Don’t hesitate to contact me if you have any questions or interesting projects for me.</p>
@@ -120,7 +127,7 @@ const Contact = () => {
         <div align="center">
           <Button
             variant="outlined" color="black"
-            type="submit" value="Send">Send a message</Button>
+            type="submit" value="Send" data-aos="flip-down">Send a message</Button>
         </div>
       </form>
     </div>

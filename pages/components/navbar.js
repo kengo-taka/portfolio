@@ -2,10 +2,16 @@ import styles from '/styles/Home.module.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion'
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Navbar = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   // for button menu
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -22,20 +28,20 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 2.0 }}
       >
-        <a href="#about"><h1 className={styles.fontKT}>K.T</h1></a>
+        <a href="#home"><h1 className={styles.fontKT}>K.T</h1></a>
       </motion.div>
 
       {/* navbar for big screen */}
       <div className={styles.navbarRight}>
-        <a href="#about" className={styles.navItem}><h3>
+        <a href="#home" className={styles.navItem} ><h3>
           ABOUT</h3></a>
-        <a href="#education" className={styles.navItem}><h3>
+        <a href="#education" className={styles.navItem} ><h3>
           EDUCATION</h3></a>
-        <a href="#products" className={styles.navItem}><h3>
+        <a href="#products" className={styles.navItem} ><h3>
           PRODUCTS</h3></a>
-        <a href="#skills" className={styles.navItem}><h3>
+        <a href="#skills" className={styles.navItem} ><h3>
           SKILLS</h3></a>
-        <a href="#contact" className={styles.navItem}><h3>
+        <a href="#contact" className={styles.navItem} ><h3>
           CONTACT</h3></a>
       </div>
 

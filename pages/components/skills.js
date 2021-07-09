@@ -7,8 +7,15 @@ import Card from '@material-ui/core/Card';
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Skills = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // title animation
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -53,8 +60,8 @@ const Skills = () => {
                   <h3 className={styles.skillsTitle}>iOS Development</h3>
                       <div className={styles.orangeLineS1}></div>
                   <div className={styles.mt2}></div>
-                  <p className={styles.skillsText}>Swift</p>
-                  <p className={styles.skillsText}>Objective-C</p>
+                  <p className={styles.skillsText} data-aos="flip-left">Swift</p>
+                  <p className={styles.skillsText} data-aos="flip-left">Objective-C</p>
                 </Card>
               </div>
             </Paper>
@@ -64,18 +71,18 @@ const Skills = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardSkills} >
 
-                  <DesktopMacIcon style={{ fontSize: 80 }} />
+                  <DesktopMacIcon style={{ fontSize: 80 }}/>
 
-                  <h3 className={styles.skillsTitle}>Web Development</h3>
+                  <h3 className={styles.skillsTitle} >Web Development</h3>
                       <div className={styles.orangeLineS1}></div>
                   <div className={styles.mt2}></div>
-                  <p className={styles.skillsText}>React.js / Next.js / Material UI</p>
-                  <p className={styles.skillsText}>Java</p>
-                  <p className={styles.skillsText}>JavaScript</p>
-                  <p className={styles.skillsText}>HTML / CSS</p>
-                  <p className={styles.skillsText}>BootStrap</p>
-                  <p className={styles.skillsText}>PHP</p>
-                  <p className={styles.skillsText}>WordPress</p>
+                  <p className={styles.skillsText} data-aos="flip-left">React.js / Next.js / Material UI</p>
+                  <p className={styles.skillsText} data-aos="flip-left">Java</p>
+                  <p className={styles.skillsText} data-aos="flip-left">JavaScript</p>
+                  <p className={styles.skillsText} data-aos="flip-left">HTML / CSS</p>
+                  <p className={styles.skillsText} data-aos="flip-left">BootStrap</p>
+                  <p className={styles.skillsText} data-aos="flip-left">PHP</p>
+                  <p className={styles.skillsText} data-aos="flip-left">WordPress</p>
                 </Card>
               </div>
             </Paper>
