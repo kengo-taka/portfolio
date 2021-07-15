@@ -75,7 +75,7 @@ const Products = () => {
                   <h2 className={styles.productsText2}>Cocktail Recipe</h2>
                         <div className={styles.orangeLineP1}></div>
                   <div className={styles.mt3}></div>
-                  <h4 className={styles.productsText3}>You can look up over 600 cocktail recipes. It is made by Next.js, Material UI and so on.</h4>
+                  <h4 className={styles.productsText3}>You can look up over 600 cocktail recipes. It is made by Next.js, Material UI and Firebase(Auth, Firestore).</h4>
                 </Card>
               </div>
             </Paper>
