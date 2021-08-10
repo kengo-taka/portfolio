@@ -65,6 +65,12 @@
     font-family: "Montserrat";
     color: white;
   }
+
+  .navItem:hover {
+    margin-left: 50px;
+    font-family: "Montserrat";
+    color: orange;
+  }
   
   .navbar {
     display: flex;
@@ -154,7 +160,13 @@
   width: 350px;
   height: 230px;
 }
-
+/* 
+.cardWeb:hover {
+  max-width: 80%;
+  width: 350px;
+  height: 230px;
+  color: orange
+} */
 .cardIOS {
   max-width: 80%;
   width: 285px;
@@ -238,6 +250,12 @@ text-align: center;
   display: flex;
   justify-content: center;
   color: white;
+}
+
+.footerSocial:hover {
+  display: flex;
+  justify-content: center;
+  color: orange;
 }
 
 .footerIcon {
