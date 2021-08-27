@@ -59,8 +59,8 @@ const Products = () => {
             <Paper elevation={0} >
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
-                  <Link href="https://corona-a5aad.web.app">
-                    <Image src="/corona.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                  <Link href="https://shop-tau-bay.vercel.app">
+                    <Image src="/shop.png" width={350} height={220} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -70,7 +70,41 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
+                  <div className={styles.mt2}></div>
+                  <h2 className={styles.productsText2}>Shop Website</h2>
+                        <div className={styles.orangeLineP1}></div>
+                  <div className={styles.mt3}></div>
+                  <h4 className={styles.productsText3}>It is fake cloth shop website. It is made by React.js, Material UI, Firebase(Auth, Strage, Firestore) and Redux.</h4>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+        </Grid>
+
+        <div className={styles.mt5}></div>
+        <div align="center">
+          <div className={styles.longLine} ></div>
+        </div>
+        <div className={styles.mt5}></div>
+
+        <Grid container>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center">
+                <Card elevation={0} className={styles.cardWeb}>
+                  <Link href="https://corona-a5aad.web.app">
+                    <Image src="/corona.png" width={350} height={220} alt="hi" className={styles.imageChange} />
+                  </Link>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center" >
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Corona Info(MERN stack)</h2>
                         <div className={styles.orangeLineP1}></div>
@@ -94,7 +128,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
                   <Link href="https://cocktail-nine.vercel.app">
-                    <Image src="/cocktail.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                    <Image src="/cocktail.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -105,7 +139,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Cocktail Recipe</h2>
                         <div className={styles.orangeLineP1}></div>
@@ -129,7 +163,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
                   <Link href="https://frescura-cafe.vercel.app">
-                    <Image src="/frescura-cafe.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                    <Image src="/frescura-cafe.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -139,7 +173,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Cafe website</h2>
                         <div className={styles.orangeLineP1}></div>
@@ -163,7 +197,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://ayaship.marine-ocean.com/">
-                    <Image src="/ayaship.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                    <Image src="/ayaship.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -173,7 +207,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Medical website</h2>
                         <div className={styles.orangeLineP1}></div>
@@ -185,7 +219,7 @@ const Products = () => {
           </Grid>
         </Grid>
 
-        <div className={styles.mt5}></div>
+        {/* <div className={styles.mt5}></div>
         <div align="center">
           <div className={styles.longLine} ></div>
         </div>
@@ -197,7 +231,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://apple.marine-ocean.com/">
-                    <Image src="/apple.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                    <Image src="/apple.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -207,7 +241,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Apple website</h2>
                       <div className={styles.orangeLineP1}></div>
@@ -217,21 +251,21 @@ const Products = () => {
               </div>
             </Paper>
           </Grid>
-        </Grid>
+        </Grid> */}
 
-        <div className={styles.mt5}></div>
+        {/* <div className={styles.mt5}></div>
         <div align="center">
           <div className={styles.longLine} ></div>
         </div>
-        <div className={styles.mt5}></div>
+        <div className={styles.mt5}></div> */}
 
-        <Grid container>
+        {/* <Grid container>
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
                   <Link href="http://company.marine-ocean.com/">
-                    <Image src="/company.png" width={350} height={240} alt="hi" className={styles.imageChange} data-aos="flip-left"/>
+                    <Image src="/company.png" width={350} height={240} alt="hi" className={styles.imageChange} />
                   </Link>
                 </Card>
               </div>
@@ -241,7 +275,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardWeb} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardWeb} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Company website</h2>
                     <div className={styles.orangeLineP1}></div>
@@ -251,7 +285,7 @@ const Products = () => {
               </div>
             </Paper>
           </Grid>
-        </Grid>
+        </Grid> */}
 
 
         <div className={styles.mt5}></div>
@@ -266,7 +300,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardIOS}>
                   <Link href="https://github.com/cookie777/Hang-Out-Planner">
-                    <Image src="/hang.png" width={200} height={370} alt="h" data-aos="flip-left"/>
+                    <Image src="/hang.png" width={200} height={370} alt="h" />
                   </Link>
                 </Card>
               </div>
@@ -275,7 +309,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardIOS} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardIOS} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Hang-Out-Planner</h2>
                                           <div className={styles.orangeLineP1}></div>
@@ -301,7 +335,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardIOS}>
                   <Link href="https://github.com/kengo-taka/ToDoItemWithCoreData">
-                    <Image src="/todo.png" width={200} height={370} alt="h" data-aos="flip-left"/>
+                    <Image src="/todo.png" width={200} height={370} alt="h" />
                   </Link>
                 </Card>
               </div>
@@ -311,7 +345,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardIOS} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardIOS} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>To Do List</h2>
                   <div className={styles.orangeLineP1}></div>
@@ -335,7 +369,7 @@ const Products = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardIOS}>
                   <Link href="https://github.com/kengo-taka/collectionviewAssignment">
-                    <Image src="/collection.png" width={200} height={370} alt="h" data-aos="flip-left"/>
+                    <Image src="/collection.png" width={200} height={370} alt="h" />
                   </Link>
                 </Card>
               </div>
@@ -345,7 +379,7 @@ const Products = () => {
           <Grid item xs={12} sm={12} md={12} lg={6}>
             <Paper elevation={0} >
               <div align="center" >
-                <Card elevation={0} className={styles.cardIOS} data-aos="fade-right">
+                <Card elevation={0} className={styles.cardIOS} >
                   <div className={styles.mt2}></div>
                   <h2 className={styles.productsText2}>Cafe CollectionView</h2>
                   <div className={styles.orangeLineP1}></div>

@@ -24,7 +24,7 @@ const About = () => {
             <Paper elevation={0} >
               <div align="center">
                 <Card elevation={0} className={styles.cardAbout}>
-                  <Image src="/cafe.jpg" width={450} height={300} alt="hi" data-aos="zoom-in"/>
+                  <Image src="/cafe.jpg" width={450} height={300} alt="hi"/>
                 </Card>
               </div>
             </Paper>
@@ -34,7 +34,7 @@ const About = () => {
               <div align="center">
                 <Card elevation={0} className={styles.cardAbout}>
                   <div className={styles.mt2}></div>
-                  <h4 className={styles.aboutText} data-aos="flip-down">I am Kengo. I am an iOS developer and a front-end developer, based in  Vancouver, available to work remotely or onsite. I will build your iPhone App and Web site.</h4>
+                  <h4 className={styles.aboutText}>I am Kengo. I am an iOS developer and a front-end developer, based in  Vancouver, available to work remotely or onsite. I will build your iPhone App and Web site.</h4>
                 </Card>
               </div>
             </Paper>

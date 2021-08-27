@@ -45,7 +45,7 @@ const Education = () => {
         animate={controls}
         variants={boxVariants}>Education</motion.h2>
       <div className={styles.mt5}></div>
-      <div data-aos="zoom-in-right">
+      <div>
         <h3 className={styles.educationText1}>DIPLOMA OF COMPUTER </h3>
         <div className={styles.orangeLineE1}></div>
         <h4 className={styles.educationText2}>Cornerstone International Community College of Canada | July 2020 -</h4>
@@ -55,7 +55,7 @@ const Education = () => {
         <div className={styles.mt10}></div>
       </div>
 
-      <div data-aos="zoom-in-right">
+      <div>
         <h3 className={styles.educationText1}>BACHELOR OF MARINE BIOLOGY</h3>
         <div className={styles.orangeLineE2}></div>
 
