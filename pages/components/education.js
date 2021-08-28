@@ -51,7 +51,7 @@ const Education = () => {
         <h4 className={styles.educationText2}>Cornerstone International Community College of Canada | July 2020 -</h4>
         <h4 className={styles.educationText3}>Coursework: Introduction to Computing, Algorithms, Flow Charts andProblem Solving, Java (Introduction to Object
           Oriented Programming),
-          Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStrap, Wordpress</h4>
+          Swift Programming (Algorithms & Data Structures), Objective-C, HTML,CSS, BootStrap, Wordpress, React</h4>
         <div className={styles.mt10}></div>
       </div>
 
