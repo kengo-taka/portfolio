@@ -59,6 +59,40 @@ const Products = () => {
             <Paper elevation={0} >
               <div align="center">
                 <Card elevation={0} className={styles.cardWeb}>
+                  <Link href="https://wc-vancouver.vercel.app">
+                    <Image src="/wc.png" width={350} height={220} alt="hi" className={styles.imageChange} />
+                  </Link>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center" >
+                <Card elevation={0} className={styles.cardWeb} >
+                  <div className={styles.mt2}></div>
+                  <h2 className={styles.productsText2}>Finding washroom in Vancouver Website</h2>
+                        <div className={styles.orangeLineP1}></div>
+                  <div className={styles.mt3}></div>
+                  <h4 className={styles.productsText3}>You can find public washroom in Vancouver. It is made by React.js, Material UI and GoogleMapAPI</h4>
+                </Card>
+              </div>
+            </Paper>
+          </Grid>
+        </Grid>
+
+        <div className={styles.mt5}></div>
+        <div align="center">
+          <div className={styles.longLine} ></div>
+        </div>
+        <div className={styles.mt5}></div>
+
+        <Grid container>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
+            <Paper elevation={0} >
+              <div align="center">
+                <Card elevation={0} className={styles.cardWeb}>
                   <Link href="https://realtimechat-gamma.vercel.app">
                     <Image src="/realtime.png" width={350} height={220} alt="hi" className={styles.imageChange} />
                   </Link>
