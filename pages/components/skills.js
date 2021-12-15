@@ -78,9 +78,9 @@ const Skills = () => {
                   <div className={styles.mt2}></div>
                   <p className={styles.skillsText} data-aos="flip-left">React.js / Next.js / Material UI</p>
                   <p className={styles.skillsText} data-aos="flip-left">Redux</p>
-                  <p className={styles.skillsText} data-aos="flip-left">Firebase / MongoDB</p>
+                  <p className={styles.skillsText} data-aos="flip-left">Firebase / MongoDB / MySQL</p>
                   <p className={styles.skillsText} data-aos="flip-left">Java</p>
-                  <p className={styles.skillsText} data-aos="flip-left">JavaScript(Exporess)</p>
+                  <p className={styles.skillsText} data-aos="flip-left">JavaScript(Express)</p>
                   <p className={styles.skillsText} data-aos="flip-left">HTML / CSS / BootStrap</p>
                   <p className={styles.skillsText} data-aos="flip-left">WordPress(with PHP)</p>
                 </Card>
